@@ -18,7 +18,7 @@ body{
     background-color: black;
 }
 .nav button:hover{
-    background-color: rgb(85, 30, 0);
+    background-color: rgb(210, 35, 0);
     cursor: pointer;
 }
 #content{
@@ -28,12 +28,17 @@ body{
     grid-template-rows: 1fr;
 }
 .nav{
-    width: 100%;
     display: flex;
     justify-content: center;
     background-color: black;
+    align-items: center;
 }
-.main{
+.logo{
+    color: gold;
+    font-style: italic;
+    margin-right: 50px;
+}
+.page{
     background-image: url('./pages/main-menu-image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
