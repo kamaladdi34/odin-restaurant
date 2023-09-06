@@ -1,3 +1,4 @@
+import './index.css'
 import Main from './pages/Main';
 import NavBar, {mainButton, contactButton, menuButton} from './components/NavBar';
 import Contact from './pages/Contact.js';
