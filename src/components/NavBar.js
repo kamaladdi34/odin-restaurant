@@ -3,11 +3,14 @@ const createButton = (name)=>{
     button.innerText = name;
     return button;
 }
-let navBar = document.createElement('div');
-let mainButton = createButton('Main');
-let contactButton = createButton('Contact');
-let menuButton = createButton('Main');
-
-navBar.append(mainButton, contactButton, menuButton);
-export default navBar;
+let navBar, mainButton, contactButton, menuButton;
+const NavBar = ()=>{
+    navBar = document.createElement('div');
+    mainButton = createButton('Main');
+    contactButton = createButton('Contact');
+    menuButton = createButton('Main');
+    navBar.append(mainButton, contactButton, menuButton);
+    return navBar;
+}
+export default NavBar;
 export {mainButton, contactButton, menuButton};
