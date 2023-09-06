@@ -6,9 +6,10 @@ const createButton = (name)=>{
 let navBar, mainButton, contactButton, menuButton;
 const NavBar = ()=>{
     navBar = document.createElement('div');
+    navBar.classList.add('nav');
     mainButton = createButton('Main');
     contactButton = createButton('Contact');
-    menuButton = createButton('Main');
+    menuButton = createButton('Menu');
     navBar.append(mainButton, contactButton, menuButton);
     return navBar;
 }
